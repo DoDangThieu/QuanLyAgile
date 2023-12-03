@@ -6,5 +6,10 @@ namespace QuanLyAgile
         {
             InitializeComponent();
         }
+
+        private void lb_gender_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
