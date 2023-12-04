@@ -1,5 +1,5 @@
 ﻿using QuanLyAgile;
-using QuanLyAgile.Models;
+using QuanLyAgile.ManModels;
 //using QuanLyAgile.Models;
 using System.Drawing.Drawing2D;
 using System.Text;

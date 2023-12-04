@@ -1,5 +1,5 @@
 ﻿using Login;
-using QuanLyAgile.Models;
+using QuanLyAgile.ManModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace QuanLyAgile
 {
@@ -48,13 +49,13 @@ namespace QuanLyAgile
             {
                 if (string.IsNullOrWhiteSpace(txt_IDGV.Text))
                 {
-                    MessageBox.Show("Mã sinh viên không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Mã giáo viên không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
                 else
                  if (string.IsNullOrWhiteSpace(txt_NameGV.Text))
                 {
-                    MessageBox.Show("Tên sinh viên không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Tên giáo viên không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
                 else
@@ -80,9 +81,9 @@ namespace QuanLyAgile
                 }
                 else
                 {
-                    Sinhvien sv = qld.Sinhviens.Where(sv => sv.Masv.Equals(txt_IDGV)).SingleOrDefault();
+                    Giaovien svthem = qld.Giaoviens.Where(sv => sv.Magv.Equals(txt_IDGV)).SingleOrDefault();
                     //Dl TextBox
-                    if (sv != null)
+                    if (svthem != null)
                     {
                         MessageBox.Show("Mã giáo viên đã tồn tại", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -103,12 +104,12 @@ namespace QuanLyAgile
                             Magv = txt_IDGV.Text,
                             Hoten = txt_NameGV.Text,
                             Gioitinh = gt,
-                            Ngaysinh = DateTime.ParseExact(dtpBornGV.Text.Trim(), "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                            Ngaysinh = DateTime.ParseExact(dtpBornGV.Text.Trim(), "dd-MM-yyyy", null),
                             Diachi = txt_AddressGV.Text,
                             Sdt = txt_PhoneGV.Text,
                             Email = txt_MailGV.Text,
                             Tennd = txt_UserName.Text,
-                            Matkhau = txt_password.Text
+                            Matkhau = txt_password.Text,
                         };
                         qld.Giaoviens.Add(giaoVien);
                         qld.SaveChanges();
@@ -164,38 +165,30 @@ namespace QuanLyAgile
                     //Tim id xem co ton taai hay khong
                     string idnvSua = txt_IDGV.Text;
                     Giaovien nvSua = qld.Giaoviens.Find(idnvSua);
-                    Giaovien sv = qld.Giaoviens.Where(sv => sv.Magv.Equals(txt_IDGV)).SingleOrDefault();
                     //Dl TextBox
-                    if (sv == null)
+                    if (nvSua != null)
                     {
-                        MessageBox.Show("Mã giáo viên không tồn tại", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else
-                    {
-                        string gt = "";
                         if (rdbMaleGV.Checked == true)
                         {
-                            gt = "Nam";
+                            nvSua.Gioitinh = "Nam";
                         }
                         else
                         {
-                            gt = "Nữ";
+                            nvSua.Gioitinh = "Nữ";
                         }
-                        //Khoi tAO
-                        Giaovien giaoVien = new Giaovien()
-                        {
-                            Magv = txt_IDGV.Text,
-                            Hoten = txt_NameGV.Text,
-                            Gioitinh = gt,
-                            Ngaysinh = DateTime.ParseExact(dtpBornGV.Text.Trim(), "dd-MM-yyyy", CultureInfo.InvariantCulture),
-                            Diachi = txt_AddressGV.Text,
-                            Sdt = txt_PhoneGV.Text,
-                            Email = txt_MailGV.Text,
-                            Tennd = txt_UserName.Text,
-                            Matkhau = txt_password.Text
-                        };
-                        qld.Giaoviens.Add(giaoVien);
+                        nvSua.Magv = txt_IDGV.Text;
+                        nvSua.Hoten = txt_NameGV.Text;
+                        nvSua.Ngaysinh = DateTime.ParseExact(dtpBornGV.Text.Trim(), "dd-MM-yyyy", null);
+                        nvSua.Diachi = txt_AddressGV.Text;
+                        nvSua.Sdt = txt_PhoneGV.Text;
+                        nvSua.Email = txt_MailGV.Text;
+                        nvSua.Tennd = txt_UserName.Text;
+                        nvSua.Matkhau = txt_password.Text;
                         qld.SaveChanges();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không tìm thấy sinh viên muốn sửa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 LoadData();
@@ -221,12 +214,12 @@ namespace QuanLyAgile
                              nv.Diachi,
                              nv.Sdt,
                              nv.Tennd,
-                             nv.Matkhau
+                             nv.Matkhau,
                          };
             //sap xep danh nhan vien the ten
-            //dgvdanhsach.DataSource = result.OrderBy(x => x.HoTen).ToList();
+            dgv_danhSach.DataSource = result.OrderBy(x => x.ID).ToList();
 
-            dgv_danhSach.Columns[0].HeaderText = "Mã nhân viên";
+            dgv_danhSach.Columns[0].HeaderText = "Mã giảng viên";
             dgv_danhSach.Columns[1].HeaderText = "Họ Tên";
             dgv_danhSach.Columns[2].HeaderText = "Ngày sinh";
             dgv_danhSach.Columns[3].HeaderText = "Giới Tính";
@@ -234,7 +227,7 @@ namespace QuanLyAgile
             dgv_danhSach.Columns[5].HeaderText = "Địa chỉ";
             dgv_danhSach.Columns[6].HeaderText = "Số điện thoại";
             dgv_danhSach.Columns[7].HeaderText = "Tên tài khoản";
-            dgv_danhSach.Columns[7].HeaderText = "Mật khẩu";
+            dgv_danhSach.Columns[8].HeaderText = "Mật khẩu";
             ////chuyển formaat về dạng d/m/y
             dgv_danhSach.Columns[2].DefaultCellStyle.Format = "dd-MM-yyyy";
         }

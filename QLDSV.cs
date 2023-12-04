@@ -1,5 +1,5 @@
 ﻿using Login;
-using QuanLyAgile.Models;
+using QuanLyAgile.ManModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

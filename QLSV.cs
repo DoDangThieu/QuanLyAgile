@@ -1,4 +1,4 @@
-﻿using QuanLyAgile.Models;
+﻿using QuanLyAgile.ManModels;
 using System.Globalization;
 
 namespace QuanLyAgile
@@ -17,6 +17,10 @@ namespace QuanLyAgile
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //foreach (DataGridViewColumn column in dgv_danhSach.Columns)
+            //{
+            //    Console.WriteLine(column.HeaderText); // Hiển thị tên của cột (HeaderText)
+            //}
             LoadData();
         }
         public void LoadData()
@@ -35,7 +39,7 @@ namespace QuanLyAgile
                              nv.Sdt
                          };
             //sap xep danh nhan vien the ten
-            //dgvdanhsach.DataSource = result.OrderBy(x => x.HoTen).ToList();
+            dgv_danhSach.DataSource = result.OrderBy(x => x.Tensv).ToList();
 
             dgv_danhSach.Columns[0].HeaderText = "Mã nhân viên";
             dgv_danhSach.Columns[1].HeaderText = "Họ Tên";
@@ -93,9 +97,9 @@ namespace QuanLyAgile
                 }
                 else
                 {
-                    Sinhvien sv = qld.Sinhviens.Where(sv => sv.Masv.Equals(txt_ID)).SingleOrDefault();
+                    Sinhvien svThem = qld.Sinhviens.Where(sv => sv.Masv.Equals(txt_ID)).SingleOrDefault();
                     //Dl TextBox
-                    if (sv != null)
+                    if (svThem != null)
                     {
                         MessageBox.Show("Mã sinh viên đã tồn tại", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -116,12 +120,12 @@ namespace QuanLyAgile
                             Masv = txt_ID.Text,
                             Tensv = txt_Name.Text,
                             Gioitinh = gt,
-                            Ngaysinh = DateTime.ParseExact(dtpBorn.Text.Trim(), "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                            Ngaysinh = DateTime.ParseExact(dtpBorn.Text.Trim(), "dd-MM-yyyy", null),
                             Diachi = txtAddress.Text,
                             Sdt = txt_Phone.Text,
                             Email = txt_Mail.Text,
-                            Tennd = "Anh",
-                            Matkhau = "123MNS"
+                            //Tennd = "Anh",
+                            //Matkhau = "123MNS"
                         };
                         qld.Sinhviens.Add(SinhVien);
                         qld.SaveChanges();
@@ -169,48 +173,36 @@ namespace QuanLyAgile
                     //Tim id xem co ton taai hay khong
                     string idnvSua = txt_ID.Text;
                     Sinhvien nvSua = qld.Sinhviens.Find(idnvSua);
-                    Sinhvien sv = qld.Sinhviens.Where(sv => sv.Masv.Equals(txt_ID)).SingleOrDefault();
                     //Dl TextBox
-                    if (sv == null)
+                    if (nvSua != null)
                     {
-                        MessageBox.Show("Mã sinh viên không tồn tại", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else
-                    {
-                        string gt = "";
                         if (rdbMale.Checked == true)
                         {
-                            gt = "Nam";
+                            nvSua.Gioitinh = "Nam";
                         }
                         else
                         {
-                            gt = "Nữ";
+                            nvSua.Gioitinh = "Nữ";
                         }
-                        //Khoi tAO
-                        Sinhvien SinhVien = new Sinhvien()
-                        {
-                            Masv = txt_ID.Text,
-                            Tensv = txt_Name.Text,
-                            Gioitinh = gt,
-                            Ngaysinh = DateTime.ParseExact(dtpBorn.Text.Trim(), "dd-MM-yyyy", CultureInfo.InvariantCulture),
-                            Diachi = txtAddress.Text,
-                            Sdt = txt_Phone.Text,
-                            Email = txt_Mail.Text,
-                            Tennd = "Anh",
-                            Matkhau = "123MNS"
-                        };
-                        qld.Sinhviens.Add(SinhVien);
+                            nvSua.Tensv = txt_Name.Text;
+                            nvSua.Ngaysinh = DateTime.ParseExact(dtpBorn.Text.Trim(), "dd-MM-yyyy", null);
+                            nvSua.Diachi = txtAddress.Text;
+                            nvSua.Sdt = txt_Phone.Text;
+                            nvSua.Email = txt_Mail.Text;
                         qld.SaveChanges();
                     }
+                    else
+                    {
+                        MessageBox.Show("Không tìm thấy sinh viên muốn sửa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
-                LoadData();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Có lỗi: " + ex.Message, "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-
+            LoadData();
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)

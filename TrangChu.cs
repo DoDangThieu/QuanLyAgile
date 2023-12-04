@@ -45,16 +45,21 @@ namespace QuanLyAgile
         {
             QLSV qLSV = new QLSV();
             qLSV.Show();
+            this.Close();
         }
 
         private void btn_Lecturer_Click(object sender, EventArgs e)
         {
-
+            QLGV qLGV = new QLGV();
+            qLGV.Show();
+            this.Close();
         }
 
         private void btn_StudentMark_Click(object sender, EventArgs e)
         {
-
+            QLDSV qLDSV = new QLDSV();
+            qLDSV.Show();
+            this.Close();
         }
     }
 }

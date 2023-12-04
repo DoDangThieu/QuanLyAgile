@@ -52,9 +52,11 @@
             btn_Update = new Button();
             btn_add = new Button();
             dgv_danhSach = new DataGridView();
+            grb_List = new GroupBox();
             grb_Info.SuspendLayout();
             grbMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_danhSach).BeginInit();
+            grb_List.SuspendLayout();
             SuspendLayout();
             // 
             // grbImage
@@ -85,7 +87,7 @@
             grb_Info.Controls.Add(lb_ID);
             grb_Info.Location = new Point(3, 102);
             grb_Info.Name = "grb_Info";
-            grb_Info.Size = new Size(264, 336);
+            grb_Info.Size = new Size(231, 336);
             grb_Info.TabIndex = 1;
             grb_Info.TabStop = false;
             grb_Info.Text = "Thông tin sinh viên";
@@ -276,30 +278,41 @@
             // dgv_danhSach
             // 
             dgv_danhSach.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_danhSach.Location = new Point(269, 85);
+            dgv_danhSach.Location = new Point(5, 26);
             dgv_danhSach.Name = "dgv_danhSach";
             dgv_danhSach.RowHeadersWidth = 51;
             dgv_danhSach.RowTemplate.Height = 29;
-            dgv_danhSach.Size = new Size(535, 367);
+            dgv_danhSach.Size = new Size(555, 327);
             dgv_danhSach.TabIndex = 3;
             dgv_danhSach.CellContentClick += dgv_danhSach_CellContentClick;
             // 
-            // Form1
+            // grb_List
+            // 
+            grb_List.Controls.Add(dgv_danhSach);
+            grb_List.Location = new Point(240, 85);
+            grb_List.Name = "grb_List";
+            grb_List.Size = new Size(560, 370);
+            grb_List.TabIndex = 4;
+            grb_List.TabStop = false;
+            grb_List.Text = "Danh sách sinh viên";
+            // 
+            // QLSV
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(dgv_danhSach);
+            Controls.Add(grb_List);
             Controls.Add(grbMenu);
             Controls.Add(grb_Info);
             Controls.Add(grbImage);
-            Name = "Form1";
+            Name = "QLSV";
             Text = "Quản lý sinh viên";
             Load += Form1_Load;
             grb_Info.ResumeLayout(false);
             grb_Info.PerformLayout();
             grbMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgv_danhSach).EndInit();
+            grb_List.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -329,5 +342,6 @@
         private Button btn_Update;
         private Button btn_add;
         private DataGridView dgv_danhSach;
+        private GroupBox grb_List;
     }
 }
