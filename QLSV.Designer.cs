@@ -1,6 +1,6 @@
 ﻿namespace QuanLyAgile
 {
-    partial class Form1
+    partial class QLSV
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,13 +31,13 @@
             grbImage = new GroupBox();
             grb_Info = new GroupBox();
             dtpBorn = new DateTimePicker();
-            rbnFemale = new RadioButton();
-            rbnMale = new RadioButton();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            rdbFemale = new RadioButton();
+            rdbMale = new RadioButton();
+            txtAddress = new TextBox();
+            txt_Mail = new TextBox();
+            txt_Phone = new TextBox();
+            txt_Name = new TextBox();
+            txt_ID = new TextBox();
             lb_Address = new Label();
             lb_Born = new Label();
             lb_gender = new Label();
@@ -47,14 +47,14 @@
             lb_ID = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             grbMenu = new GroupBox();
-            btn_add = new Button();
-            btn_Update = new Button();
-            btn_Delete = new Button();
             btn_Save = new Button();
-            dataGridView1 = new DataGridView();
+            btn_Delete = new Button();
+            btn_Update = new Button();
+            btn_add = new Button();
+            dgv_danhSach = new DataGridView();
             grb_Info.SuspendLayout();
             grbMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgv_danhSach).BeginInit();
             SuspendLayout();
             // 
             // grbImage
@@ -69,13 +69,13 @@
             // grb_Info
             // 
             grb_Info.Controls.Add(dtpBorn);
-            grb_Info.Controls.Add(rbnFemale);
-            grb_Info.Controls.Add(rbnMale);
-            grb_Info.Controls.Add(textBox5);
-            grb_Info.Controls.Add(textBox4);
-            grb_Info.Controls.Add(textBox3);
-            grb_Info.Controls.Add(textBox2);
-            grb_Info.Controls.Add(textBox1);
+            grb_Info.Controls.Add(rdbFemale);
+            grb_Info.Controls.Add(rdbMale);
+            grb_Info.Controls.Add(txtAddress);
+            grb_Info.Controls.Add(txt_Mail);
+            grb_Info.Controls.Add(txt_Phone);
+            grb_Info.Controls.Add(txt_Name);
+            grb_Info.Controls.Add(txt_ID);
             grb_Info.Controls.Add(lb_Address);
             grb_Info.Controls.Add(lb_Born);
             grb_Info.Controls.Add(lb_gender);
@@ -99,62 +99,62 @@
             dtpBorn.Size = new Size(99, 27);
             dtpBorn.TabIndex = 14;
             // 
-            // rbnFemale
+            // rdbFemale
             // 
-            rbnFemale.AutoSize = true;
-            rbnFemale.Location = new Point(181, 180);
-            rbnFemale.Name = "rbnFemale";
-            rbnFemale.Size = new Size(50, 24);
-            rbnFemale.TabIndex = 13;
-            rbnFemale.TabStop = true;
-            rbnFemale.Text = "Nữ";
-            rbnFemale.UseVisualStyleBackColor = true;
+            rdbFemale.AutoSize = true;
+            rdbFemale.Location = new Point(181, 180);
+            rdbFemale.Name = "rdbFemale";
+            rdbFemale.Size = new Size(50, 24);
+            rdbFemale.TabIndex = 13;
+            rdbFemale.TabStop = true;
+            rdbFemale.Text = "Nữ";
+            rdbFemale.UseVisualStyleBackColor = true;
             // 
-            // rbnMale
+            // rdbMale
             // 
-            rbnMale.AutoSize = true;
-            rbnMale.Location = new Point(105, 180);
-            rbnMale.Name = "rbnMale";
-            rbnMale.Size = new Size(62, 24);
-            rbnMale.TabIndex = 12;
-            rbnMale.TabStop = true;
-            rbnMale.Text = "Nam";
-            rbnMale.UseVisualStyleBackColor = true;
+            rdbMale.AutoSize = true;
+            rdbMale.Location = new Point(105, 180);
+            rdbMale.Name = "rdbMale";
+            rdbMale.Size = new Size(62, 24);
+            rdbMale.TabIndex = 12;
+            rdbMale.TabStop = true;
+            rdbMale.Text = "Nam";
+            rdbMale.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtAddress
             // 
-            textBox5.Location = new Point(24, 293);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(125, 27);
-            textBox5.TabIndex = 11;
+            txtAddress.Location = new Point(24, 293);
+            txtAddress.Name = "txtAddress";
+            txtAddress.Size = new Size(125, 27);
+            txtAddress.TabIndex = 11;
             // 
-            // textBox4
+            // txt_Mail
             // 
-            textBox4.Location = new Point(173, 135);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(87, 27);
-            textBox4.TabIndex = 10;
+            txt_Mail.Location = new Point(173, 135);
+            txt_Mail.Name = "txt_Mail";
+            txt_Mail.Size = new Size(87, 27);
+            txt_Mail.TabIndex = 10;
             // 
-            // textBox3
+            // txt_Phone
             // 
-            textBox3.Location = new Point(48, 132);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(67, 27);
-            textBox3.TabIndex = 9;
+            txt_Phone.Location = new Point(48, 132);
+            txt_Phone.Name = "txt_Phone";
+            txt_Phone.Size = new Size(67, 27);
+            txt_Phone.TabIndex = 9;
             // 
-            // textBox2
+            // txt_Name
             // 
-            textBox2.Location = new Point(106, 90);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 8;
+            txt_Name.Location = new Point(106, 90);
+            txt_Name.Name = "txt_Name";
+            txt_Name.Size = new Size(125, 27);
+            txt_Name.TabIndex = 8;
             // 
-            // textBox1
+            // txt_ID
             // 
-            textBox1.Location = new Point(9, 46);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 7;
+            txt_ID.Location = new Point(9, 46);
+            txt_ID.Name = "txt_ID";
+            txt_ID.Size = new Size(125, 27);
+            txt_ID.TabIndex = 7;
             // 
             // lb_Address
             // 
@@ -233,23 +233,15 @@
             grbMenu.TabStop = false;
             grbMenu.Text = "Chức năng";
             // 
-            // btn_add
+            // btn_Save
             // 
-            btn_add.Location = new Point(48, 26);
-            btn_add.Name = "btn_add";
-            btn_add.Size = new Size(94, 29);
-            btn_add.TabIndex = 0;
-            btn_add.Text = "Thêm";
-            btn_add.UseVisualStyleBackColor = true;
-            // 
-            // btn_Update
-            // 
-            btn_Update.Location = new Point(174, 26);
-            btn_Update.Name = "btn_Update";
-            btn_Update.Size = new Size(94, 29);
-            btn_Update.TabIndex = 1;
-            btn_Update.Text = "Sửa";
-            btn_Update.UseVisualStyleBackColor = true;
+            btn_Save.Location = new Point(453, 26);
+            btn_Save.Name = "btn_Save";
+            btn_Save.Size = new Size(94, 29);
+            btn_Save.TabIndex = 3;
+            btn_Save.Text = "Hiển thị";
+            btn_Save.UseVisualStyleBackColor = true;
+            btn_Save.Click += btn_Save_Click;
             // 
             // btn_Delete
             // 
@@ -259,41 +251,55 @@
             btn_Delete.TabIndex = 2;
             btn_Delete.Text = "Xóa";
             btn_Delete.UseVisualStyleBackColor = true;
+            btn_Delete.Click += btn_Delete_Click;
             // 
-            // btn_Save
+            // btn_Update
             // 
-            btn_Save.Location = new Point(453, 26);
-            btn_Save.Name = "btn_Save";
-            btn_Save.Size = new Size(94, 29);
-            btn_Save.TabIndex = 3;
-            btn_Save.Text = "Hiển thị";
-            btn_Save.UseVisualStyleBackColor = true;
+            btn_Update.Location = new Point(174, 26);
+            btn_Update.Name = "btn_Update";
+            btn_Update.Size = new Size(94, 29);
+            btn_Update.TabIndex = 1;
+            btn_Update.Text = "Sửa";
+            btn_Update.UseVisualStyleBackColor = true;
+            btn_Update.Click += btn_Update_Click;
             // 
-            // dataGridView1
+            // btn_add
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(269, 85);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(535, 367);
-            dataGridView1.TabIndex = 3;
+            btn_add.Location = new Point(48, 26);
+            btn_add.Name = "btn_add";
+            btn_add.Size = new Size(94, 29);
+            btn_add.TabIndex = 0;
+            btn_add.Text = "Thêm";
+            btn_add.UseVisualStyleBackColor = true;
+            btn_add.Click += btn_add_Click;
+            // 
+            // dgv_danhSach
+            // 
+            dgv_danhSach.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_danhSach.Location = new Point(269, 85);
+            dgv_danhSach.Name = "dgv_danhSach";
+            dgv_danhSach.RowHeadersWidth = 51;
+            dgv_danhSach.RowTemplate.Height = 29;
+            dgv_danhSach.Size = new Size(535, 367);
+            dgv_danhSach.TabIndex = 3;
+            dgv_danhSach.CellContentClick += dgv_danhSach_CellContentClick;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgv_danhSach);
             Controls.Add(grbMenu);
             Controls.Add(grb_Info);
             Controls.Add(grbImage);
             Name = "Form1";
             Text = "Quản lý sinh viên";
+            Load += Form1_Load;
             grb_Info.ResumeLayout(false);
             grb_Info.PerformLayout();
             grbMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgv_danhSach).EndInit();
             ResumeLayout(false);
         }
 
@@ -308,20 +314,20 @@
         private Label lb_Phone;
         private Label lb_Name;
         private Label lb_ID;
-        private TextBox textBox1;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private TextBox txt_ID;
+        private TextBox txt_Mail;
+        private TextBox txt_Phone;
+        private TextBox txt_Name;
         private DateTimePicker dtpBorn;
-        private RadioButton rbnFemale;
-        private RadioButton rbnMale;
-        private TextBox textBox5;
+        private RadioButton rdbFemale;
+        private RadioButton rdbMale;
+        private TextBox txtAddress;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private GroupBox grbMenu;
         private Button btn_Save;
         private Button btn_Delete;
         private Button btn_Update;
         private Button btn_add;
-        private DataGridView dataGridView1;
+        private DataGridView dgv_danhSach;
     }
 }

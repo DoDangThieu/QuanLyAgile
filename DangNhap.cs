@@ -1,4 +1,5 @@
 ﻿using QuanLyAgile;
+using QuanLyAgile.Models;
 //using QuanLyAgile.Models;
 using System.Drawing.Drawing2D;
 using System.Text;
@@ -12,6 +13,7 @@ namespace Login
         private bool isDragging = false;
         private int offsetX, offsetY;
        
+        quanlydiemContext qld = new quanlydiemContext();
         public DangNhap()
         {
             InitializeComponent();
@@ -77,25 +79,54 @@ namespace Login
         private void Login_Click(object sender, EventArgs e)
         {
 
-            if (txtusername.Text == "")
+            string username = txtusername.Text;
+            string password = txtpassword.Text;
+            var cbUserName = (from cb in qld.Canbos
+                              where cb.Tendn.ToUpper() == username.ToLower()
+                              select new
+                              {
+                                  cb.Tendn,
+                                  cb.Matkhau
+                              }).FirstOrDefault();
+            var gvUserName = (from gv in qld.Giaoviens
+                              where gv.Tennd.ToUpper() == username.ToLower()
+                              select new
+                              {
+                                  gv.Tennd,
+                                  gv.Matkhau
+                              }).FirstOrDefault();
+            var svUserName = (from sv in qld.Sinhviens
+                              where sv.Tennd.ToUpper() == username.ToLower()
+                              select new
+                              {
+                                  sv.Tennd,
+                                  sv.Matkhau
+                              }).FirstOrDefault();
+            if (cbUserName != null && password.ToUpper() == cbUserName.Matkhau.ToUpper())
             {
-                MessageBox.Show("Chua Nhap Tai Khoan !!");
-                txtusername.Focus();
-                return;
+                bool isCanBoLoginSuccessful = true;
+                MessageBox.Show("Đăng nhập thành công!");
+                accountType = "canbo";
+                if (isCanBoLoginSuccessful)
+                {
+                    TrangChu TC = new TrangChu(accountType);
+                    TC.Show();
+                }
             }
-            if (txtpassword.Text == "")
+            else if (gvUserName != null && password.ToUpper() == gvUserName.Matkhau.ToUpper())
             {
-                MessageBox.Show("Chua Nhap Mat Khau !!");
-                txtpassword.Focus();
-                return;
+                bool isGiaoVienLoginSuccessful = true;
+                accountType = "giaovien";
+                MessageBox.Show("Đăng nhập thành công!");
+                if (isGiaoVienLoginSuccessful)
+                {
+                    TrangChu TC = new TrangChu(accountType);
+                    TC.Show();
+                }
             }
             else
             {
-
-          
-                TrangChu form5 = new TrangChu();
-                form5.Show();
-
+                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, 0, false);
             }
 
 
