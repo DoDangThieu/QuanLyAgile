@@ -12,7 +12,7 @@ namespace Login
         private const int CORNER_RADIUS = 15;
         private bool isDragging = false;
         private int offsetX, offsetY;
-       
+
         quanlydiemContext qld = new quanlydiemContext();
         public DangNhap()
         {
@@ -33,7 +33,7 @@ namespace Login
 
         private void DangNhap_Load(object sender, EventArgs e)
         {
-            
+
             GraphicsPath path = new GraphicsPath();
             path.AddArc(new Rectangle(0, 0, CORNER_RADIUS * 2, CORNER_RADIUS * 2), 180, 90);
             path.AddArc(new Rectangle(Width - CORNER_RADIUS * 2, 0, CORNER_RADIUS * 2, CORNER_RADIUS * 2), 270, 90);
@@ -142,6 +142,21 @@ namespace Login
             txtpassword.UseSystemPasswordChar = true;
         }
 
-       
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    TrangChu form123 = new TrangChu(accountType);
+        //       form123.Show();
+        //}
+
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    TrangChu form123 = new TrangChu(accountType);
+        //    form123.Show();
+        //}
     }
 }

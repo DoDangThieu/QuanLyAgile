@@ -263,5 +263,10 @@ namespace QuanLyAgile
             DangNhap dangNhap = new DangNhap();
             dangNhap.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

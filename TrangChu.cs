@@ -21,6 +21,18 @@ namespace QuanLyAgile
             this._accountType = accountType;
         }
 
+        public void loadform(object Form)
+        {
+            if (this.panel3.Controls.Count > 0)
+                this.panel3.Controls.RemoveAt(0);
+            Form f = Form as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.panel3.Controls.Add(f);
+            this.panel3.Tag = f;
+            f.Show();
+        }
+
         private void TrangChu_Load(object sender, EventArgs e)
         {
             if (_accountType.Equals("canbo"))
@@ -43,23 +55,31 @@ namespace QuanLyAgile
 
         private void btn_Student_Click(object sender, EventArgs e)
         {
-            QLSV qLSV = new QLSV();
-            qLSV.Show();
-            this.Close();
+            loadform(new QLSV());
+            //QLSV qLSV = new QLSV();
+            //qLSV.Show();
+            //this.Close();
         }
 
         private void btn_Lecturer_Click(object sender, EventArgs e)
         {
-            QLGV qLGV = new QLGV();
-            qLGV.Show();
-            this.Close();
+            loadform(new QLGV());
+            //QLGV qLGV = new QLGV();
+            //qLGV.Show();
+            //this.Close();
         }
 
         private void btn_StudentMark_Click(object sender, EventArgs e)
         {
-            QLDSV qLDSV = new QLDSV();
-            qLDSV.Show();
-            this.Close();
+            loadform(new QLDSV());
+            //QLDSV qLDSV = new QLDSV();
+            //qLDSV.Show();
+            //this.Close();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -91,6 +91,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // TaskBar
             // 
@@ -150,7 +151,7 @@
             Login.FlatStyle = FlatStyle.Flat;
             Login.Font = new Font("Calibri", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             Login.ForeColor = Color.White;
-            Login.Location = new Point(93, 223);
+            Login.Location = new Point(104, 232);
             Login.Name = "Login";
             Login.Size = new Size(166, 42);
             Login.TabIndex = 4;

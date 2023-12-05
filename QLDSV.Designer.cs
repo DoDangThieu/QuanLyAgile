@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLDSV));
             grbImageGV = new GroupBox();
             btn_Find = new Button();
             txt_StudentID = new TextBox();
@@ -55,104 +56,98 @@
             lb_SubjectID = new Label();
             grb_Subject = new GroupBox();
             dgv_ListMark = new DataGridView();
-            btn_Exit = new Button();
+            splitContainer1 = new SplitContainer();
+            pictureBox1 = new PictureBox();
             grbImageGV.SuspendLayout();
             grbMenuGV.SuspendLayout();
             grb_InfoSV.SuspendLayout();
             grb_Subject.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_ListMark).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // grbImageGV
             // 
+            grbImageGV.BackColor = Color.White;
+            grbImageGV.Controls.Add(pictureBox1);
             grbImageGV.Controls.Add(btn_Find);
             grbImageGV.Controls.Add(txt_StudentID);
             grbImageGV.Controls.Add(lb_StudentID);
-            grbImageGV.Location = new Point(12, 2);
+            resources.ApplyResources(grbImageGV, "grbImageGV");
             grbImageGV.Name = "grbImageGV";
-            grbImageGV.Size = new Size(217, 95);
-            grbImageGV.TabIndex = 2;
             grbImageGV.TabStop = false;
-            grbImageGV.Text = "Tìm kiếm sinh viên";
             // 
             // btn_Find
             // 
-            btn_Find.Location = new Point(6, 62);
+            btn_Find.BackColor = Color.WhiteSmoke;
+            resources.ApplyResources(btn_Find, "btn_Find");
             btn_Find.Name = "btn_Find";
-            btn_Find.Size = new Size(94, 29);
-            btn_Find.TabIndex = 4;
-            btn_Find.Text = "Tìm kiếm";
-            btn_Find.UseVisualStyleBackColor = true;
+            btn_Find.UseVisualStyleBackColor = false;
             btn_Find.Click += btn_Find_Click;
             // 
             // txt_StudentID
             // 
-            txt_StudentID.Location = new Point(72, 29);
+            resources.ApplyResources(txt_StudentID, "txt_StudentID");
             txt_StudentID.Name = "txt_StudentID";
-            txt_StudentID.Size = new Size(125, 27);
-            txt_StudentID.TabIndex = 1;
             // 
             // lb_StudentID
             // 
-            lb_StudentID.AutoSize = true;
-            lb_StudentID.Location = new Point(12, 32);
+            resources.ApplyResources(lb_StudentID, "lb_StudentID");
             lb_StudentID.Name = "lb_StudentID";
-            lb_StudentID.Size = new Size(54, 20);
-            lb_StudentID.TabIndex = 0;
-            lb_StudentID.Text = "Mã SV:";
             // 
             // grbMenuGV
             // 
-            grbMenuGV.Controls.Add(btn_Exit);
+            grbMenuGV.BackColor = Color.White;
             grbMenuGV.Controls.Add(btn_SaveMark);
             grbMenuGV.Controls.Add(btn_DeleteMark);
             grbMenuGV.Controls.Add(btn_UpdateMark);
             grbMenuGV.Controls.Add(btn_addMark);
-            grbMenuGV.Location = new Point(235, 12);
+            resources.ApplyResources(grbMenuGV, "grbMenuGV");
             grbMenuGV.Name = "grbMenuGV";
-            grbMenuGV.Size = new Size(562, 74);
-            grbMenuGV.TabIndex = 4;
             grbMenuGV.TabStop = false;
-            grbMenuGV.Text = "Chức năng";
             // 
             // btn_SaveMark
             // 
-            btn_SaveMark.Location = new Point(356, 26);
+            btn_SaveMark.BackColor = Color.FromArgb(0, 151, 178);
+            resources.ApplyResources(btn_SaveMark, "btn_SaveMark");
+            btn_SaveMark.ForeColor = Color.White;
+            btn_SaveMark.Image = Properties.Resources.icons8_save_30;
             btn_SaveMark.Name = "btn_SaveMark";
-            btn_SaveMark.Size = new Size(94, 29);
-            btn_SaveMark.TabIndex = 3;
-            btn_SaveMark.Text = "Hiển thị";
-            btn_SaveMark.UseVisualStyleBackColor = true;
+            btn_SaveMark.UseVisualStyleBackColor = false;
             btn_SaveMark.Click += btn_SaveMark_Click;
             // 
             // btn_DeleteMark
             // 
-            btn_DeleteMark.Location = new Point(256, 26);
+            btn_DeleteMark.BackColor = Color.FromArgb(255, 87, 87);
+            resources.ApplyResources(btn_DeleteMark, "btn_DeleteMark");
+            btn_DeleteMark.ForeColor = Color.White;
+            btn_DeleteMark.Image = Properties.Resources.icons8_trash_30;
             btn_DeleteMark.Name = "btn_DeleteMark";
-            btn_DeleteMark.Size = new Size(94, 29);
-            btn_DeleteMark.TabIndex = 2;
-            btn_DeleteMark.Text = "Xóa";
-            btn_DeleteMark.UseVisualStyleBackColor = true;
+            btn_DeleteMark.UseVisualStyleBackColor = false;
             btn_DeleteMark.Click += btn_DeleteMark_Click;
             // 
             // btn_UpdateMark
             // 
-            btn_UpdateMark.Location = new Point(144, 26);
+            btn_UpdateMark.BackColor = Color.FromArgb(255, 222, 89);
+            resources.ApplyResources(btn_UpdateMark, "btn_UpdateMark");
+            btn_UpdateMark.ForeColor = Color.White;
+            btn_UpdateMark.Image = Properties.Resources.icons8_pencil_30;
             btn_UpdateMark.Name = "btn_UpdateMark";
-            btn_UpdateMark.Size = new Size(94, 29);
-            btn_UpdateMark.TabIndex = 1;
-            btn_UpdateMark.Text = "Sửa";
-            btn_UpdateMark.UseVisualStyleBackColor = true;
+            btn_UpdateMark.UseVisualStyleBackColor = false;
             btn_UpdateMark.Click += btn_UpdateMark_Click;
             // 
             // btn_addMark
             // 
-            btn_addMark.Location = new Point(18, 26);
+            btn_addMark.BackColor = Color.FromArgb(0, 191, 99);
+            resources.ApplyResources(btn_addMark, "btn_addMark");
+            btn_addMark.ForeColor = Color.White;
+            btn_addMark.Image = Properties.Resources.icons8_add_male_user_30;
             btn_addMark.Name = "btn_addMark";
-            btn_addMark.Size = new Size(94, 29);
-            btn_addMark.TabIndex = 0;
-            btn_addMark.Text = "Thêm";
-            btn_addMark.UseVisualStyleBackColor = true;
+            btn_addMark.UseVisualStyleBackColor = false;
             btn_addMark.Click += btn_addMark_Click;
             // 
             // grb_InfoSV
@@ -168,137 +163,92 @@
             grb_InfoSV.Controls.Add(lb_MarkAVG);
             grb_InfoSV.Controls.Add(lb_NameStudent);
             grb_InfoSV.Controls.Add(lb_IDStudent);
-            grb_InfoSV.Location = new Point(12, 233);
+            resources.ApplyResources(grb_InfoSV, "grb_InfoSV");
             grb_InfoSV.Name = "grb_InfoSV";
-            grb_InfoSV.Size = new Size(217, 205);
-            grb_InfoSV.TabIndex = 5;
             grb_InfoSV.TabStop = false;
-            grb_InfoSV.Text = "Thông tin sinh viên";
             grb_InfoSV.Enter += grb_InfoSV_Enter;
             // 
             // lb_NameClass
             // 
-            lb_NameClass.AutoSize = true;
-            lb_NameClass.Location = new Point(100, 148);
+            resources.ApplyResources(lb_NameClass, "lb_NameClass");
             lb_NameClass.Name = "lb_NameClass";
-            lb_NameClass.Size = new Size(25, 20);
-            lb_NameClass.TabIndex = 13;
-            lb_NameClass.Text = "00";
             // 
             // txt_SubjectName
             // 
-            txt_SubjectName.Location = new Point(100, 112);
+            resources.ApplyResources(txt_SubjectName, "txt_SubjectName");
             txt_SubjectName.Name = "txt_SubjectName";
-            txt_SubjectName.Size = new Size(107, 27);
-            txt_SubjectName.TabIndex = 12;
             // 
             // lb_subjectName
             // 
-            lb_subjectName.AutoSize = true;
-            lb_subjectName.Location = new Point(1, 115);
+            resources.ApplyResources(lb_subjectName, "lb_subjectName");
+            lb_subjectName.ForeColor = Color.FromArgb(84, 84, 84);
             lb_subjectName.Name = "lb_subjectName";
-            lb_subjectName.Size = new Size(69, 20);
-            lb_subjectName.TabIndex = 11;
-            lb_subjectName.Text = "Tên môn:";
             // 
             // lb_ClassName
             // 
-            lb_ClassName.AutoSize = true;
-            lb_ClassName.Location = new Point(100, 126);
+            resources.ApplyResources(lb_ClassName, "lb_ClassName");
             lb_ClassName.Name = "lb_ClassName";
-            lb_ClassName.Size = new Size(0, 20);
-            lb_ClassName.TabIndex = 10;
             // 
             // lb_class
             // 
-            lb_class.AutoSize = true;
-            lb_class.Location = new Point(6, 148);
+            resources.ApplyResources(lb_class, "lb_class");
+            lb_class.ForeColor = Color.FromArgb(84, 84, 84);
             lb_class.Name = "lb_class";
-            lb_class.Size = new Size(37, 20);
-            lb_class.TabIndex = 9;
-            lb_class.Text = "Lớp:";
             // 
             // txt_NameStudent
             // 
-            txt_NameStudent.Location = new Point(100, 71);
+            resources.ApplyResources(txt_NameStudent, "txt_NameStudent");
             txt_NameStudent.Name = "txt_NameStudent";
-            txt_NameStudent.Size = new Size(107, 27);
-            txt_NameStudent.TabIndex = 8;
             // 
             // txt_IDStudent
             // 
-            txt_IDStudent.Location = new Point(100, 38);
+            resources.ApplyResources(txt_IDStudent, "txt_IDStudent");
             txt_IDStudent.Name = "txt_IDStudent";
-            txt_IDStudent.Size = new Size(107, 27);
-            txt_IDStudent.TabIndex = 7;
             // 
             // lb_AVG
             // 
-            lb_AVG.AutoSize = true;
-            lb_AVG.Location = new Point(100, 182);
+            resources.ApplyResources(lb_AVG, "lb_AVG");
             lb_AVG.Name = "lb_AVG";
-            lb_AVG.Size = new Size(28, 20);
-            lb_AVG.TabIndex = 6;
-            lb_AVG.Text = "0.0";
             // 
             // lb_MarkAVG
             // 
-            lb_MarkAVG.AutoSize = true;
-            lb_MarkAVG.Location = new Point(-3, 182);
+            resources.ApplyResources(lb_MarkAVG, "lb_MarkAVG");
+            lb_MarkAVG.ForeColor = Color.FromArgb(84, 84, 84);
             lb_MarkAVG.Name = "lb_MarkAVG";
-            lb_MarkAVG.Size = new Size(69, 20);
-            lb_MarkAVG.TabIndex = 2;
-            lb_MarkAVG.Text = "Điểm TB:";
             // 
             // lb_NameStudent
             // 
-            lb_NameStudent.AutoSize = true;
-            lb_NameStudent.Location = new Point(1, 79);
+            resources.ApplyResources(lb_NameStudent, "lb_NameStudent");
+            lb_NameStudent.ForeColor = Color.FromArgb(84, 84, 84);
             lb_NameStudent.Name = "lb_NameStudent";
-            lb_NameStudent.Size = new Size(78, 20);
-            lb_NameStudent.TabIndex = 1;
-            lb_NameStudent.Text = "Họ và Tên:";
             // 
             // lb_IDStudent
             // 
-            lb_IDStudent.AutoSize = true;
-            lb_IDStudent.Location = new Point(0, 38);
+            resources.ApplyResources(lb_IDStudent, "lb_IDStudent");
+            lb_IDStudent.ForeColor = Color.FromArgb(84, 84, 84);
             lb_IDStudent.Name = "lb_IDStudent";
-            lb_IDStudent.Size = new Size(94, 20);
-            lb_IDStudent.TabIndex = 0;
-            lb_IDStudent.Text = "Mã sinh viên:";
             // 
             // lb_SubjectMark
             // 
-            lb_SubjectMark.AutoSize = true;
-            lb_SubjectMark.Location = new Point(12, 77);
+            resources.ApplyResources(lb_SubjectMark, "lb_SubjectMark");
+            lb_SubjectMark.ForeColor = Color.FromArgb(84, 84, 84);
             lb_SubjectMark.Name = "lb_SubjectMark";
-            lb_SubjectMark.Size = new Size(48, 20);
-            lb_SubjectMark.TabIndex = 16;
-            lb_SubjectMark.Text = "Điểm:";
             // 
             // txt_SubjectID
             // 
-            txt_SubjectID.Location = new Point(82, 31);
+            resources.ApplyResources(txt_SubjectID, "txt_SubjectID");
             txt_SubjectID.Name = "txt_SubjectID";
-            txt_SubjectID.Size = new Size(125, 27);
-            txt_SubjectID.TabIndex = 10;
             // 
             // txt_SubjectMark
             // 
-            txt_SubjectMark.Location = new Point(82, 77);
+            resources.ApplyResources(txt_SubjectMark, "txt_SubjectMark");
             txt_SubjectMark.Name = "txt_SubjectMark";
-            txt_SubjectMark.Size = new Size(92, 27);
-            txt_SubjectMark.TabIndex = 9;
             // 
             // lb_SubjectID
             // 
-            lb_SubjectID.AutoSize = true;
-            lb_SubjectID.Location = new Point(12, 34);
+            resources.ApplyResources(lb_SubjectID, "lb_SubjectID");
+            lb_SubjectID.ForeColor = Color.FromArgb(84, 84, 84);
             lb_SubjectID.Name = "lb_SubjectID";
-            lb_SubjectID.Size = new Size(67, 20);
-            lb_SubjectID.TabIndex = 3;
-            lb_SubjectID.Text = "Mã môn:";
             // 
             // grb_Subject
             // 
@@ -306,46 +256,50 @@
             grb_Subject.Controls.Add(txt_SubjectID);
             grb_Subject.Controls.Add(lb_SubjectMark);
             grb_Subject.Controls.Add(txt_SubjectMark);
-            grb_Subject.Location = new Point(12, 99);
+            resources.ApplyResources(grb_Subject, "grb_Subject");
             grb_Subject.Name = "grb_Subject";
-            grb_Subject.Size = new Size(217, 135);
-            grb_Subject.TabIndex = 5;
             grb_Subject.TabStop = false;
-            grb_Subject.Text = "Thêm điểm";
             // 
             // dgv_ListMark
             // 
             dgv_ListMark.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_ListMark.Location = new Point(235, 82);
+            resources.ApplyResources(dgv_ListMark, "dgv_ListMark");
             dgv_ListMark.Name = "dgv_ListMark";
-            dgv_ListMark.RowHeadersWidth = 51;
             dgv_ListMark.RowTemplate.Height = 29;
-            dgv_ListMark.Size = new Size(562, 371);
-            dgv_ListMark.TabIndex = 6;
             dgv_ListMark.CellContentClick += dgv_ListMark_CellContentClick;
             // 
-            // btn_Exit
+            // splitContainer1
             // 
-            btn_Exit.Location = new Point(468, 26);
-            btn_Exit.Name = "btn_Exit";
-            btn_Exit.Size = new Size(94, 29);
-            btn_Exit.TabIndex = 4;
-            btn_Exit.Text = "Thoát";
-            btn_Exit.UseVisualStyleBackColor = true;
-            btn_Exit.Click += btn_Exit_Click;
+            resources.ApplyResources(splitContainer1, "splitContainer1");
+            splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            splitContainer1.Panel1.Controls.Add(grb_InfoSV);
+            splitContainer1.Panel1.Controls.Add(grb_Subject);
+            // 
+            // splitContainer1.Panel2
+            // 
+            splitContainer1.Panel2.BackColor = Color.WhiteSmoke;
+            splitContainer1.Panel2.Controls.Add(grbMenuGV);
+            splitContainer1.Panel2.Controls.Add(dgv_ListMark);
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(pictureBox1, "pictureBox1");
+            pictureBox1.Image = Properties.Resources.icons8_find;
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.TabStop = false;
             // 
             // QLDSV
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(dgv_ListMark);
-            Controls.Add(grb_Subject);
-            Controls.Add(grb_InfoSV);
-            Controls.Add(grbMenuGV);
+            BackColor = Color.White;
             Controls.Add(grbImageGV);
+            Controls.Add(splitContainer1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "QLDSV";
-            Text = "QLDSV";
             grbImageGV.ResumeLayout(false);
             grbImageGV.PerformLayout();
             grbMenuGV.ResumeLayout(false);
@@ -354,6 +308,11 @@
             grb_Subject.ResumeLayout(false);
             grb_Subject.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_ListMark).EndInit();
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -386,6 +345,7 @@
         private Label lb_subjectName;
         private TextBox txt_SubjectName;
         private Label lb_NameClass;
-        private Button btn_Exit;
+        private SplitContainer splitContainer1;
+        private PictureBox pictureBox1;
     }
 }
