@@ -117,4 +117,908 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 82</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 22</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>grbImageGV</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_Find.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="btn_Find.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 77</value>
+  </data>
+  <data name="btn_Find.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 33</value>
+  </data>
+  <data name="btn_Find.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btn_Find.Text" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="&gt;&gt;btn_Find.Name" xml:space="preserve">
+    <value>btn_Find</value>
+  </data>
+  <data name="&gt;&gt;btn_Find.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Find.Parent" xml:space="preserve">
+    <value>grbImageGV</value>
+  </data>
+  <data name="&gt;&gt;btn_Find.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txt_StudentID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 42</value>
+  </data>
+  <data name="txt_StudentID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 30</value>
+  </data>
+  <data name="txt_StudentID.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txt_StudentID.Name" xml:space="preserve">
+    <value>txt_StudentID</value>
+  </data>
+  <data name="&gt;&gt;txt_StudentID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_StudentID.Parent" xml:space="preserve">
+    <value>grbImageGV</value>
+  </data>
+  <data name="&gt;&gt;txt_StudentID.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lb_StudentID.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_StudentID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 48</value>
+  </data>
+  <data name="lb_StudentID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 23</value>
+  </data>
+  <data name="lb_StudentID.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lb_StudentID.Text" xml:space="preserve">
+    <value>Mã SV:</value>
+  </data>
+  <data name="&gt;&gt;lb_StudentID.Name" xml:space="preserve">
+    <value>lb_StudentID</value>
+  </data>
+  <data name="&gt;&gt;lb_StudentID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_StudentID.Parent" xml:space="preserve">
+    <value>grbImageGV</value>
+  </data>
+  <data name="&gt;&gt;lb_StudentID.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="grbImageGV.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt, style=Bold</value>
+  </data>
+  <data name="grbImageGV.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="grbImageGV.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="grbImageGV.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 125</value>
+  </data>
+  <data name="grbImageGV.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="grbImageGV.Text" xml:space="preserve">
+    <value>Tìm kiếm sinh viên</value>
+  </data>
+  <data name="&gt;&gt;grbImageGV.Name" xml:space="preserve">
+    <value>grbImageGV</value>
+  </data>
+  <data name="&gt;&gt;grbImageGV.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grbImageGV.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grbImageGV.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_SaveMark.Name" xml:space="preserve">
+    <value>btn_SaveMark</value>
+  </data>
+  <data name="&gt;&gt;btn_SaveMark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SaveMark.Parent" xml:space="preserve">
+    <value>grbMenuGV</value>
+  </data>
+  <data name="&gt;&gt;btn_SaveMark.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_DeleteMark.Name" xml:space="preserve">
+    <value>btn_DeleteMark</value>
+  </data>
+  <data name="&gt;&gt;btn_DeleteMark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_DeleteMark.Parent" xml:space="preserve">
+    <value>grbMenuGV</value>
+  </data>
+  <data name="&gt;&gt;btn_DeleteMark.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_UpdateMark.Name" xml:space="preserve">
+    <value>btn_UpdateMark</value>
+  </data>
+  <data name="&gt;&gt;btn_UpdateMark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_UpdateMark.Parent" xml:space="preserve">
+    <value>grbMenuGV</value>
+  </data>
+  <data name="&gt;&gt;btn_UpdateMark.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_addMark.Name" xml:space="preserve">
+    <value>btn_addMark</value>
+  </data>
+  <data name="&gt;&gt;btn_addMark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_addMark.Parent" xml:space="preserve">
+    <value>grbMenuGV</value>
+  </data>
+  <data name="&gt;&gt;btn_addMark.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="grbMenuGV.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="grbMenuGV.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="grbMenuGV.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="grbMenuGV.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="grbMenuGV.Size" type="System.Drawing.Size, System.Drawing">
+    <value>734, 72</value>
+  </data>
+  <data name="grbMenuGV.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="grbMenuGV.Text" xml:space="preserve">
+    <value>Chức năng</value>
+  </data>
+  <data name="&gt;&gt;grbMenuGV.Name" xml:space="preserve">
+    <value>grbMenuGV</value>
+  </data>
+  <data name="&gt;&gt;grbMenuGV.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grbMenuGV.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;grbMenuGV.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_SaveMark.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_SaveMark.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Showcard Gothic, 12pt</value>
+  </data>
+  <data name="btn_SaveMark.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btn_SaveMark.Location" type="System.Drawing.Point, System.Drawing">
+    <value>577, 25</value>
+  </data>
+  <data name="btn_SaveMark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 41</value>
+  </data>
+  <data name="btn_SaveMark.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btn_SaveMark.Text" xml:space="preserve">
+    <value>SHOW</value>
+  </data>
+  <data name="&gt;&gt;btn_SaveMark.Name" xml:space="preserve">
+    <value>btn_SaveMark</value>
+  </data>
+  <data name="&gt;&gt;btn_SaveMark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SaveMark.Parent" xml:space="preserve">
+    <value>grbMenuGV</value>
+  </data>
+  <data name="&gt;&gt;btn_SaveMark.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_DeleteMark.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_DeleteMark.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Showcard Gothic, 12pt</value>
+  </data>
+  <data name="btn_DeleteMark.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btn_DeleteMark.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 25</value>
+  </data>
+  <data name="btn_DeleteMark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 41</value>
+  </data>
+  <data name="btn_DeleteMark.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btn_DeleteMark.Text" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="&gt;&gt;btn_DeleteMark.Name" xml:space="preserve">
+    <value>btn_DeleteMark</value>
+  </data>
+  <data name="&gt;&gt;btn_DeleteMark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_DeleteMark.Parent" xml:space="preserve">
+    <value>grbMenuGV</value>
+  </data>
+  <data name="&gt;&gt;btn_DeleteMark.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_UpdateMark.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_UpdateMark.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Showcard Gothic, 12pt</value>
+  </data>
+  <data name="btn_UpdateMark.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btn_UpdateMark.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 25</value>
+  </data>
+  <data name="btn_UpdateMark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 41</value>
+  </data>
+  <data name="btn_UpdateMark.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btn_UpdateMark.Text" xml:space="preserve">
+    <value>    UPDATE</value>
+  </data>
+  <data name="&gt;&gt;btn_UpdateMark.Name" xml:space="preserve">
+    <value>btn_UpdateMark</value>
+  </data>
+  <data name="&gt;&gt;btn_UpdateMark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_UpdateMark.Parent" xml:space="preserve">
+    <value>grbMenuGV</value>
+  </data>
+  <data name="&gt;&gt;btn_UpdateMark.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_addMark.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_addMark.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Showcard Gothic, 12pt</value>
+  </data>
+  <data name="btn_addMark.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btn_addMark.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="btn_addMark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 41</value>
+  </data>
+  <data name="btn_addMark.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="btn_addMark.Text" xml:space="preserve">
+    <value>Thêm</value>
+  </data>
+  <data name="&gt;&gt;btn_addMark.Name" xml:space="preserve">
+    <value>btn_addMark</value>
+  </data>
+  <data name="&gt;&gt;btn_addMark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_addMark.Parent" xml:space="preserve">
+    <value>grbMenuGV</value>
+  </data>
+  <data name="&gt;&gt;btn_addMark.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lb_NameClass.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_NameClass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 220</value>
+  </data>
+  <data name="lb_NameClass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 25</value>
+  </data>
+  <data name="lb_NameClass.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lb_NameClass.Text" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="&gt;&gt;lb_NameClass.Name" xml:space="preserve">
+    <value>lb_NameClass</value>
+  </data>
+  <data name="&gt;&gt;lb_NameClass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_NameClass.Parent" xml:space="preserve">
+    <value>grb_InfoSV</value>
+  </data>
+  <data name="&gt;&gt;lb_NameClass.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txt_SubjectName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 161</value>
+  </data>
+  <data name="txt_SubjectName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_SubjectName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 31</value>
+  </data>
+  <data name="txt_SubjectName.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;txt_SubjectName.Name" xml:space="preserve">
+    <value>txt_SubjectName</value>
+  </data>
+  <data name="&gt;&gt;txt_SubjectName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_SubjectName.Parent" xml:space="preserve">
+    <value>grb_InfoSV</value>
+  </data>
+  <data name="&gt;&gt;txt_SubjectName.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lb_subjectName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_subjectName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 161</value>
+  </data>
+  <data name="lb_subjectName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 25</value>
+  </data>
+  <data name="lb_subjectName.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lb_subjectName.Text" xml:space="preserve">
+    <value>Tên môn:</value>
+  </data>
+  <data name="&gt;&gt;lb_subjectName.Name" xml:space="preserve">
+    <value>lb_subjectName</value>
+  </data>
+  <data name="&gt;&gt;lb_subjectName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_subjectName.Parent" xml:space="preserve">
+    <value>grb_InfoSV</value>
+  </data>
+  <data name="&gt;&gt;lb_subjectName.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lb_ClassName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_ClassName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 94</value>
+  </data>
+  <data name="lb_ClassName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="lb_ClassName.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;lb_ClassName.Name" xml:space="preserve">
+    <value>lb_ClassName</value>
+  </data>
+  <data name="&gt;&gt;lb_ClassName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_ClassName.Parent" xml:space="preserve">
+    <value>grb_InfoSV</value>
+  </data>
+  <data name="&gt;&gt;lb_ClassName.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lb_class.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_class.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 220</value>
+  </data>
+  <data name="lb_class.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 25</value>
+  </data>
+  <data name="lb_class.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lb_class.Text" xml:space="preserve">
+    <value>Lớp:</value>
+  </data>
+  <data name="&gt;&gt;lb_class.Name" xml:space="preserve">
+    <value>lb_class</value>
+  </data>
+  <data name="&gt;&gt;lb_class.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_class.Parent" xml:space="preserve">
+    <value>grb_InfoSV</value>
+  </data>
+  <data name="&gt;&gt;lb_class.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txt_NameStudent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 101</value>
+  </data>
+  <data name="txt_NameStudent.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_NameStudent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 31</value>
+  </data>
+  <data name="txt_NameStudent.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txt_NameStudent.Name" xml:space="preserve">
+    <value>txt_NameStudent</value>
+  </data>
+  <data name="&gt;&gt;txt_NameStudent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_NameStudent.Parent" xml:space="preserve">
+    <value>grb_InfoSV</value>
+  </data>
+  <data name="&gt;&gt;txt_NameStudent.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txt_IDStudent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 47</value>
+  </data>
+  <data name="txt_IDStudent.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_IDStudent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 31</value>
+  </data>
+  <data name="txt_IDStudent.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txt_IDStudent.Name" xml:space="preserve">
+    <value>txt_IDStudent</value>
+  </data>
+  <data name="&gt;&gt;txt_IDStudent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_IDStudent.Parent" xml:space="preserve">
+    <value>grb_InfoSV</value>
+  </data>
+  <data name="&gt;&gt;txt_IDStudent.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lb_AVG.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_AVG.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 28.2pt, style=Bold</value>
+  </data>
+  <data name="lb_AVG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>189, 262</value>
+  </data>
+  <data name="lb_AVG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 62</value>
+  </data>
+  <data name="lb_AVG.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lb_AVG.Text" xml:space="preserve">
+    <value>0.0</value>
+  </data>
+  <data name="&gt;&gt;lb_AVG.Name" xml:space="preserve">
+    <value>lb_AVG</value>
+  </data>
+  <data name="&gt;&gt;lb_AVG.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_AVG.Parent" xml:space="preserve">
+    <value>grb_InfoSV</value>
+  </data>
+  <data name="&gt;&gt;lb_AVG.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lb_MarkAVG.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_MarkAVG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 278</value>
+  </data>
+  <data name="lb_MarkAVG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 25</value>
+  </data>
+  <data name="lb_MarkAVG.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lb_MarkAVG.Text" xml:space="preserve">
+    <value>Điểm TB:</value>
+  </data>
+  <data name="&gt;&gt;lb_MarkAVG.Name" xml:space="preserve">
+    <value>lb_MarkAVG</value>
+  </data>
+  <data name="&gt;&gt;lb_MarkAVG.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_MarkAVG.Parent" xml:space="preserve">
+    <value>grb_InfoSV</value>
+  </data>
+  <data name="&gt;&gt;lb_MarkAVG.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lb_NameStudent.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_NameStudent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 104</value>
+  </data>
+  <data name="lb_NameStudent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 25</value>
+  </data>
+  <data name="lb_NameStudent.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lb_NameStudent.Text" xml:space="preserve">
+    <value>Họ và Tên:</value>
+  </data>
+  <data name="&gt;&gt;lb_NameStudent.Name" xml:space="preserve">
+    <value>lb_NameStudent</value>
+  </data>
+  <data name="&gt;&gt;lb_NameStudent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_NameStudent.Parent" xml:space="preserve">
+    <value>grb_InfoSV</value>
+  </data>
+  <data name="&gt;&gt;lb_NameStudent.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lb_IDStudent.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_IDStudent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 47</value>
+  </data>
+  <data name="lb_IDStudent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 25</value>
+  </data>
+  <data name="lb_IDStudent.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lb_IDStudent.Text" xml:space="preserve">
+    <value>Mã sinh viên:</value>
+  </data>
+  <data name="&gt;&gt;lb_IDStudent.Name" xml:space="preserve">
+    <value>lb_IDStudent</value>
+  </data>
+  <data name="&gt;&gt;lb_IDStudent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_IDStudent.Parent" xml:space="preserve">
+    <value>grb_InfoSV</value>
+  </data>
+  <data name="&gt;&gt;lb_IDStudent.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="grb_InfoSV.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="grb_InfoSV.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 271</value>
+  </data>
+  <data name="grb_InfoSV.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="grb_InfoSV.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="grb_InfoSV.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 359</value>
+  </data>
+  <data name="grb_InfoSV.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="grb_InfoSV.Text" xml:space="preserve">
+    <value>Thông tin sinh viên</value>
+  </data>
+  <data name="&gt;&gt;grb_InfoSV.Name" xml:space="preserve">
+    <value>grb_InfoSV</value>
+  </data>
+  <data name="&gt;&gt;grb_InfoSV.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grb_InfoSV.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;grb_InfoSV.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lb_SubjectMark.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_SubjectMark.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 68</value>
+  </data>
+  <data name="lb_SubjectMark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 23</value>
+  </data>
+  <data name="lb_SubjectMark.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lb_SubjectMark.Text" xml:space="preserve">
+    <value>Điểm:</value>
+  </data>
+  <data name="&gt;&gt;lb_SubjectMark.Name" xml:space="preserve">
+    <value>lb_SubjectMark</value>
+  </data>
+  <data name="&gt;&gt;lb_SubjectMark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_SubjectMark.Parent" xml:space="preserve">
+    <value>grb_Subject</value>
+  </data>
+  <data name="&gt;&gt;lb_SubjectMark.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txt_SubjectID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 27</value>
+  </data>
+  <data name="txt_SubjectID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_SubjectID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 30</value>
+  </data>
+  <data name="txt_SubjectID.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;txt_SubjectID.Name" xml:space="preserve">
+    <value>txt_SubjectID</value>
+  </data>
+  <data name="&gt;&gt;txt_SubjectID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_SubjectID.Parent" xml:space="preserve">
+    <value>grb_Subject</value>
+  </data>
+  <data name="&gt;&gt;txt_SubjectID.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txt_SubjectMark.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 65</value>
+  </data>
+  <data name="txt_SubjectMark.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_SubjectMark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 30</value>
+  </data>
+  <data name="txt_SubjectMark.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txt_SubjectMark.Name" xml:space="preserve">
+    <value>txt_SubjectMark</value>
+  </data>
+  <data name="&gt;&gt;txt_SubjectMark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_SubjectMark.Parent" xml:space="preserve">
+    <value>grb_Subject</value>
+  </data>
+  <data name="&gt;&gt;txt_SubjectMark.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lb_SubjectID.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_SubjectID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 30</value>
+  </data>
+  <data name="lb_SubjectID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 23</value>
+  </data>
+  <data name="lb_SubjectID.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lb_SubjectID.Text" xml:space="preserve">
+    <value>Mã môn:</value>
+  </data>
+  <data name="&gt;&gt;lb_SubjectID.Name" xml:space="preserve">
+    <value>lb_SubjectID</value>
+  </data>
+  <data name="&gt;&gt;lb_SubjectID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_SubjectID.Parent" xml:space="preserve">
+    <value>grb_Subject</value>
+  </data>
+  <data name="&gt;&gt;lb_SubjectID.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grb_Subject.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt, style=Bold</value>
+  </data>
+  <data name="grb_Subject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 142</value>
+  </data>
+  <data name="grb_Subject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="grb_Subject.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="grb_Subject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 115</value>
+  </data>
+  <data name="grb_Subject.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="grb_Subject.Text" xml:space="preserve">
+    <value>Thêm điểm</value>
+  </data>
+  <data name="&gt;&gt;grb_Subject.Name" xml:space="preserve">
+    <value>grb_Subject</value>
+  </data>
+  <data name="&gt;&gt;grb_Subject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grb_Subject.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;grb_Subject.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dgv_ListMark.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 89</value>
+  </data>
+  <data name="dgv_ListMark.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="dgv_ListMark.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="dgv_ListMark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>734, 660</value>
+  </data>
+  <data name="dgv_ListMark.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;dgv_ListMark.Name" xml:space="preserve">
+    <value>dgv_ListMark</value>
+  </data>
+  <data name="&gt;&gt;dgv_ListMark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgv_ListMark.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;dgv_ListMark.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1141, 760</value>
+  </data>
+  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
+    <value>379</value>
+  </data>
+  <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1141, 760</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>QLDSV</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>QLDSV</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
